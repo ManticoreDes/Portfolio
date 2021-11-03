@@ -78,6 +78,7 @@ header.shrink {
 .info {
 	display: flex;
 	justify-content: space-around;
+	text-align: center;
 }
 
 .info h3 {
