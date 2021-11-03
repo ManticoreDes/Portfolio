@@ -10,6 +10,59 @@ a {
 	color: black;
 }
 
+li {
+	list-style: none;
+}
+
+header {
+	height: 144px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	background-color: transparent;
+	z-index: 99;
+	transition: height 0.3s ease 0s, background-color 0.3s ease 0s;
+}
+
+header.shrink {
+	height: 60px;
+	background-color: #069c86;
+}
+
+.main-menu-wrapper {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	pointer-events: none;
+}
+
+.main-menu {
+	display: flex;
+	pointer-events: visible;
+}
+
+.main-menu > li > a {
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	color: black;
+}
+
+.main-menu > li > a.active {
+	color: gray;
+}
+
+.main-menu > li ~ li {
+	margin-left: 30vw;
+}
+
+.main-menu > li > a:hover {
+	color: white;
+	font-weight: 600;
+}
+
 .section {
 	background-color: #255850;
 	height: 100vh;
@@ -112,17 +165,73 @@ a {
 }
 
 .thumbnail:hover img {
-	transform: scale(1.2);
+	transform: scale(1.1);
+}
+
+.footer {
+	background-color: #32776d;
+	padding: 10px 0;
+	text-align: center;
 }
 
 @media (max-width: 900px) {
+	.main-menu {
+		flex-direction: column;
+		text-align: center;
+		padding: 0;
+	}
+
+	.main-menu > li ~ li {
+		margin-left: 0;
+	}
+
+	header.shrink {
+		height: 90px;
+		background-color: #069c86;
+	}
+
+	.section-title > h3 {
+		text-transform: uppercase;
+	}
+
+	.second-title {
+		font-size: 2.5rem;
+		color: black;
+		position: absolute;
+		left: 8%;
+		bottom: 10%;
+	}
+
+	.main-title {
+		font-size: 1.6rem;
+		z-index: 1;
+	}
+
+	.info {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.info h3 {
+		font-size: 15vw;
+	}
+
+	.info p {
+		font-size: 5vw;
+	}
+
 	.portfolio {
 		display: flex;
 		flex-direction: column;
+		padding: 120px 0;
 	}
 
 	.thumbnail {
-		width: 70vw;
-		height: 50vw;
+		width: 400px;
+	}
+
+	.thumbnail img {
+		height: 250px;
 	}
 }
