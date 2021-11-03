@@ -82,10 +82,6 @@ header.shrink {
 	color: white;
 }
 
-.light {
-	background-color: #32776d;
-}
-
 .info {
 	display: flex;
 	justify-content: space-around;
@@ -162,6 +158,10 @@ header.shrink {
 }
 
 .about {
+	background-color: #255850;
+}
+
+.about-text {
 	width: 75vw;
 	font-size: 2rem;
 }
