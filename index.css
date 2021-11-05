@@ -1,12 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+
 body {
 	margin: 0;
-	font-family: Helvetica;
 	overflow-x: hidden;
-}
-
-a {
-	font-size: 2rem;
-	text-decoration: none;
+	font-family: RobotoCondensed, sans-serif;
 }
 
 ul {
@@ -51,8 +48,9 @@ header.shrink {
 
 .main-menu > li > a {
 	text-transform: uppercase;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	color: white;
+	text-decoration: none;
 }
 
 .main-menu > li > a.active {
@@ -64,8 +62,7 @@ header.shrink {
 }
 
 .main-menu > li > a:hover {
-	color: white;
-	font-weight: 600;
+	color: wheat;
 }
 
 .section {
@@ -153,10 +150,14 @@ header.shrink {
 	padding-top: 80px;
 	background-color: #32776d;
 	text-align: center;
+}
+
+.portfolio-title-txt {
 	font-size: 5rem;
 	text-transform: uppercase;
 	font-weight: 600;
 	color: white;
+	margin: 0;
 }
 
 .portfolio {
@@ -287,7 +288,7 @@ header.shrink {
 		width: 80vw;
 	}
 
-	.portfolio-title {
+	.portfolio-title-txt {
 		font-size: 4rem;
 	}
 
@@ -324,7 +325,7 @@ header.shrink {
 		font-size: 1rem;
 	}
 
-	.portfolio-title {
+	.portfolio-title-txt {
 		font-size: 2rem;
 	}
 
