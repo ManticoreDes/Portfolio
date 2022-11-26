@@ -27,7 +27,7 @@ header {
 }
 
 header.shrink {
-	height: 60px;
+	height: 10px;
 	background-color: #069c86;
 	box-shadow: 1px 3px 13px #111;
 }
@@ -68,6 +68,8 @@ header.shrink {
 .section {
 	background-color: #32776d;
 	height: 100vh;
+	width: 100vw;
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -121,10 +123,19 @@ header.shrink {
 	z-index: 1;
 }
 
+.third-title {
+	font-size: 3rem;
+	z-index: 1;
+	position: absolute;
+	left: 23%;
+	bottom: -25%;
+}
+
 .info {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	text-align: center;
+	width: 100vw;
 }
 
 .info h3 {
@@ -136,8 +147,26 @@ header.shrink {
 	font-size: 2rem;
 }
 
+.cert {
+	width: 25vw;
+
+}
+
+.skills {
+	width: 25vw;
+	padding:0 20px 0 20px;
+
+}
+
+.design {
+	width: 25vw;
+
+}
+
 .about {
 	background-color: #255850;
+	width: 100vw;
+
 }
 
 .about-text {
@@ -150,6 +179,8 @@ header.shrink {
 	padding-top: 80px;
 	background-color: #32776d;
 	text-align: center;
+	width: 100vw;
+
 }
 
 .portfolio-title-txt {
@@ -158,6 +189,7 @@ header.shrink {
 	font-weight: 600;
 	color: white;
 	margin: 0;
+
 }
 
 .portfolio {
@@ -167,6 +199,8 @@ header.shrink {
 	grid-gap: 80px 0;
 	padding: 80px 80px;
 	flex-wrap: wrap;
+	width: 100vw;
+
 }
 
 .thumbnail {
@@ -191,6 +225,7 @@ header.shrink {
 	background-color: #255850;
 	padding: 10px 0;
 	text-align: center;
+	width: 100vw;
 }
 
 .to-right {
@@ -272,11 +307,13 @@ header.shrink {
 		display: flex;
 		flex-direction: column;
 		text-align: center;
+		justify-content: center;
+		align-items: center;
 		padding-bottom: 16px;
 	}
 
 	.info h3 {
-		font-size: 4rem;
+		font-size: 2rem;
 	}
 
 	.info p {
@@ -286,6 +323,7 @@ header.shrink {
 
 	.about-text {
 		width: 80vw;
+		font-size: 1.1rem;
 	}
 
 	.portfolio-title-txt {
