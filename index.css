@@ -18,7 +18,7 @@ li {
 }
 
 header {
-	height: 144px;
+	height: 50px;
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -51,7 +51,7 @@ header.shrink {
 
 .main-menu > li > a {
 	text-transform: uppercase;
-	font-size: 2rem;
+	font-size: 1.8rem;
 	color: white;
 	text-decoration: none;
 }
@@ -60,8 +60,14 @@ header.shrink {
 	color: gray;
 }
 
-.main-menu > li ~ li {
-	margin-left: 30vw;
+.main-menu-wrapper {
+	width: 100%;
+}
+
+.main-menu {
+	width: 100%;
+	padding: 0;
+	justify-content: space-around;
 }
 
 .main-menu > li > a:hover {
@@ -72,7 +78,6 @@ header.shrink {
 	background-color: #32776d;
 	height: 100vh;
 	width: 100vw;
-
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -85,17 +90,23 @@ header.shrink {
 	object-fit: cover;
 	background-repeat: no-repeat;
 	color: white;
+	text-align: center;
+	align-items: baseline;
+
 }
 
 .banner h1 {
 	color: white;
 	font-size: 7rem;
+	margin-top: 280px;
+	margin-bottom: 8px;
 }
 
 .banner h3 {
 	color: white;
 	font-size: 3rem;
-	margin-top: 0;
+	margin-top: 3px;
+	margin-bottom: 3px;
 }
 
 .banner-ghost-txt {
@@ -234,10 +245,27 @@ header.shrink {
 }
 
 @media (max-width: 900px) {
+
+	header {
+		height: 60px;
+		padding-top: 3px;
+	}
+
+
+	header.shrink {
+		padding-top: 0;
+		height: 10px;
+		background-color: #069c86;
+	}
+
+	.main-menu-wrapper {
+		width: 100%;
+	}
+
 	.main-menu {
-		flex-direction: column;
-		text-align: center;
+		width: 100%;
 		padding: 0;
+		justify-content: space-around;
 	}
 
 	.main-menu > li ~ li {
@@ -248,20 +276,24 @@ header.shrink {
 		font-size: 12px;
 	}
 
-	header {
-		height: 60px;
-		padding-top: 5px;
-	}
-
-
-	header.shrink {
-		height: 60px;
-		background-color: #069c86;
-	}
 
 	.section {
 		height: fit-content;
 		min-height: 400px;
+	}
+
+	.banner h1 {
+		color: white;
+		font-size: 2.5rem;
+		margin-top: 120px;
+		margin-bottom: 8px;
+	}
+	
+	.banner h3 {
+		color: white;
+		font-size: 1.5rem;
+		margin-top: 3px;
+		margin-bottom: 3px;
 	}
 
 	.banner-ghost-txt {
@@ -325,12 +357,50 @@ header.shrink {
 }
 
 @media (max-width: 400px) {
+
+	header {
+		height: 60px;
+		padding-top: 3px;
+	}
+
+	header.shrink {
+		visibility: hidden;  
+		padding-top: 0;
+		height: 10px;
+		background-color: #069c86;
+	}
+
+	.main-menu-wrapper {
+		width: 100%;
+	}
+
+	.main-menu {
+		width: 100%;
+		padding: 0;
+		flex-direction: column;
+		align-items: center;
+	}
+
 	.main-menu > li a {
-		font-size: 1rem;
+		font-size: .8rem;
 	}
 
 	.banner {
 		background-size: 150% 100%;
+	}
+
+	.banner h1 {
+		color: white;
+		font-size: 2.5rem;
+		margin-top: 120px;
+		margin-bottom: 8px;
+	}
+	
+	.banner h3 {
+		color: white;
+		font-size: 1.5rem;
+		margin-top: 3px;
+		margin-bottom: 3px;
 	}
 
 	.cert {
