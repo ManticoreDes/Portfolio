@@ -4,6 +4,9 @@ body {
 	margin: 0;
 	overflow-x: hidden;
 	font-family: RobotoCondensed, sans-serif;
+	width: 100vw;
+	background-color: #32776d;
+
 }
 
 ul {
@@ -77,14 +80,22 @@ header.shrink {
 
 .banner {
 	background-image: url(./assets/trees.jpg);
+	overflow: hidden;
 	background-size: 150%;
 	object-fit: cover;
 	background-repeat: no-repeat;
 	color: white;
 }
 
+.banner h1 {
+	color: white;
+	font-size: 7rem;
+}
+
 .banner h3 {
 	color: white;
+	font-size: 3rem;
+	margin-top: 0;
 }
 
 .banner-ghost-txt {
@@ -100,51 +111,20 @@ header.shrink {
 	opacity: 0.1;
 }
 
-.section-title {
-	text-align: center;
-	position: relative;
-	min-width: 100vw;
-}
-
-.section-title > h3 {
-	text-transform: uppercase;
-}
-
-.second-title {
-	font-size: 7rem;
-	color: black;
-	position: absolute;
-	left: 15%;
-	bottom: -20%;
-}
-
-.main-title {
-	font-size: 3rem;
-	z-index: 1;
-}
-
-.third-title {
-	font-size: 3rem;
-	z-index: 1;
-	position: absolute;
-	left: 23%;
-	bottom: -25%;
-}
-
 .info {
 	display: flex;
 	justify-content: center;
 	text-align: center;
-	width: 100vw;
 }
 
+
 .info h3 {
-	font-size: 5rem;
+	font-size: 3rem;
 	font-weight: 600;
 }
 
 .info p {
-	font-size: 2rem;
+	font-size: 1.5rem;
 }
 
 .cert {
@@ -170,7 +150,7 @@ header.shrink {
 }
 
 .about-text {
-	width: 50vw;
+	width: 80vw;
 	font-size: 2rem;
 	text-align: center;
 }
@@ -179,8 +159,6 @@ header.shrink {
 	padding-top: 80px;
 	background-color: #32776d;
 	text-align: center;
-	width: 100vw;
-
 }
 
 .portfolio-title-txt {
@@ -199,8 +177,6 @@ header.shrink {
 	grid-gap: 80px 0;
 	padding: 80px 80px;
 	flex-wrap: wrap;
-	width: 100vw;
-
 }
 
 .thumbnail {
@@ -268,9 +244,15 @@ header.shrink {
 		margin-left: 0;
 	}
 
-	header {
-		height: 70px;
+	.main-menu > li > a {
+		font-size: 12px;
 	}
+
+	header {
+		height: 60px;
+		padding-top: 5px;
+	}
+
 
 	header.shrink {
 		height: 60px;
@@ -280,23 +262,6 @@ header.shrink {
 	.section {
 		height: fit-content;
 		min-height: 400px;
-	}
-
-	.section-title > h3 {
-		text-transform: uppercase;
-	}
-
-	.second-title {
-		font-size: 2.5rem;
-		color: black;
-		position: absolute;
-		left: 8%;
-		bottom: 10%;
-	}
-
-	.main-title {
-		font-size: 1.6rem;
-		z-index: 1;
 	}
 
 	.banner-ghost-txt {
@@ -312,13 +277,27 @@ header.shrink {
 		padding-bottom: 16px;
 	}
 
+	.cert {
+		width: 200px;
+		text-align: center;
+	}
+
+	.skills {
+		width: 200px;
+		text-align: center;
+	}
+
+	.design {
+		width: 200px;
+		text-align: center;
+	}
+
 	.info h3 {
 		font-size: 2rem;
 	}
 
 	.info p {
 		font-size: 1rem;
-		width: 90vw;
 	}
 
 	.about-text {
@@ -354,8 +333,28 @@ header.shrink {
 		background-size: 150% 100%;
 	}
 
+	.cert {
+		width: 200px;
+		text-align: center;
+	}
+
+	.skills {
+		width: 200px;
+		text-align: center;
+	}
+
+	.design {
+		width: 200px;
+		text-align: center;
+	}
+
 	.info h3 {
-		font-size: 2rem;
+		font-size: 20px;
+	}
+
+	.info p {
+		font-size: 16px;
+		width: 200px;
 	}
 
 	.about-text {
